@@ -4,9 +4,20 @@
   background-color: #fff;
 }
 
-#projects {
+#tentang {
   background-color: #00cba9;
 }
 section {
   padding-top: 5rem;
+}
+
+#kontak {
+  background-color: #fff;
+}
+.galery-img {
+  width: 100%;
+}
+
+#galery {
+  background-color: #00cba9;
 }
