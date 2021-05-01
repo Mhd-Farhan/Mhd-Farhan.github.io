@@ -105,21 +105,30 @@
               <div class="card"></div>
               <img src="img/projects/cafemakkembar.jpg" class="card-img-top" alt="switchcase" />
               <div class="card-body">
-                <p class="card-text">Ini merupakan project pertama saya menggunakan bahasa pemrograman C++ dalam metode Switch Case.</p>
+                <p class="card-text">
+                  Ini merupakan project pertama saya menggunakan bahasa pemrograman C++ dalam metode Switch Case. Silahkan klik link berikut untuk detailnya
+                  <a href="https://www.instagram.com/muhmmad_farhann/?hl=id" class="text-danger fw-bold">PROGRAM CAFE MAK KEMBAR</a>.
+                </p>
               </div>
             </div>
             <div class="col-md-4 mb-3" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="50">
               <div class="card"></div>
               <img src="img/projects/webdasarAlS.jpg" class="card-img-top" alt="webdasar" />
               <div class="card-body">
-                <p class="card-text">Ini adalah Project Web Lokal saya yang saya buat untuk salah satu perusahaan otobus ternama di Indonesia yaitu PT. ALS.</p>
+                <p class="card-text">
+                  Ini adalah Project Web Lokal saya yang saya buat untuk salah satu perusahaan otobus ternama di Indonesia yaitu PT. ALS. Silahkan klik link berikut untuk detailnya
+                  <a href="https://tiketals.com/" class="text-success fw-bold">LOKAL FORM ALS</a>.
+                </p>
               </div>
             </div>
             <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
               <div class="card"></div>
               <img src="img/projects/sma2.jpg" class="card-img-top" alt="UAS Web" />
               <div class="card-body">
-                <p class="card-text">Ini merupakan form lokal sederhana pendaftaran siswa baru di SMA Batik 2 Surakarta .</p>
+                <p class="card-text">
+                  Ini merupakan form lokal sederhana pendaftaran siswa baru di SMA Batik 2 Surakarta. Silahkan klik link berikut untuk detailnya
+                  <a href="http://smabatik2solo.sch.id/wp/" class="text-primary fw-bold">DAFTAR SMA BATIK 2 SURAKARTA</a>.
+                </p>
               </div>
             </div>
           </div>
@@ -299,6 +308,7 @@
       const scriptURL = "https://script.google.com/macros/s/AKfycbyqa31CGGIkui1jznBbXTU-QAP2QiLzOGW644UQ1wDEC7QMSVCuVBWGn0TXvh_j0FZ_rQ/exec";
       const form = document.forms["formulir-kontak-saya"];
       const btnKirim = document.querySelector(".btn-kirim");
+      const btnReset = document.querySelector(".btn-reset");
       const btnLoading = document.querySelector(".btn-loading");
       const myAlert = document.querySelector(".my-alert");
       form.addEventListener("submit", (e) => {
@@ -307,11 +317,13 @@
         // tampilkan tombol loading hilangkan tombol kirim
         btnLoading.classList.toggle("d-none");
         btnKirim.classList.toggle("d-none");
+        btnReset.classList.toggle("d-none");
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
             // tampilkan tombol kirim, hilangkan tombol loading
             btnLoading.classList.toggle("d-none");
             btnKirim.classList.toggle("d-none");
+            btnReset.classList.toggle("d-none");
             // tampilkan alert
             myAlert.classList.toggle("d-none");
             // reset Formnya
