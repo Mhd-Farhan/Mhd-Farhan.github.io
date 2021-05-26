@@ -7,6 +7,9 @@
 #tentang {
   background-color: #00cba9;
 }
+#tentang p a {
+  text-decoration: none;
+}
 section {
   padding-top: 5rem;
 }
