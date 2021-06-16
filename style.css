@@ -1,14 +1,20 @@
+* {
+  text-decoration: none !important;
+}
+nav {
+  opacity: 0.8 !important;
+  border-radius: 0 0 30px 30px;
+}
 .jumbotron {
   padding-top: 6rem;
-
-  /* background-color: #fff; */
+  background-color: #fff;
+}
+.jumbotron img:hover {
+  cursor: pointer;
 }
 
 #tentang {
   background-color: #00cba9;
-}
-#tentang p a {
-  text-decoration: none;
 }
 section {
   padding-top: 5rem;
@@ -20,7 +26,24 @@ section {
 .galery-img {
   width: 100%;
 }
+#projects img {
+  cursor: pointer;
+}
+#projects img:hover {
+  opacity: 0.8;
+}
+#projects p a:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
 
 #galery {
   background-color: #00cba9;
+}
+#galery img {
+  margin-bottom: 25px;
+}
+#galery img:hover {
+  opacity: 0.5;
+  transition: all 0.5s;
 }
