@@ -9,6 +9,10 @@ nav {
   padding-top: 6rem;
   background-color: #fff;
 }
+.jumbotron img {
+  border-radius: 30% !important;
+  box-shadow: 2px 2px #00cba9;
+}
 .jumbotron img:hover {
   cursor: pointer;
 }
@@ -46,4 +50,7 @@ section {
 #galery img:hover {
   opacity: 0.5;
   transition: all 0.5s;
+}
+footer p {
+  font-size: 20px;
 }
